@@ -2,7 +2,7 @@
 %global frameworkdir %{_libexecdir}/openshift/cartridges/fuse
 
 Name: openshift-origin-cartridge-fuse
-Version: 0.3.1
+Version: 0.3.2
 Release: 1%{?dist}
 Summary: FUSE cartridge
 Group: Development/Languages
@@ -52,6 +52,10 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Thu Apr 25 2013 Eric Sauer <eric@redhat.com> 0.3.2-1
+- Created a non-downloadable version which packages the karaf zip
+- Will want to replace this eventually with a dep on a fuse rpm.
+
 * Thu Apr 25 2013 Adam Miller <admiller@redhat.com> 0.3.1-1
 - Split v2 configure into configure/post-configure (ironcladlou@gmail.com)
 - more install/post-install scripts (dmcphers@redhat.com)
